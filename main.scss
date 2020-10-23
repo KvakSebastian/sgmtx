@@ -586,21 +586,23 @@
     }
     @media screen and (max-width: 900px) {
 
+        .contact{
+            .contact-block__item{
+                width: 40%;
+            }
+            .contact-block__item-form{
+                width: 60%;
+            }
+        }
 
         .nav{
             width: 30rem;
             .menu{
                 
                 &_item{
-                    color: #333333;
-                    font-family: Roboto;
                     font-size: 1.5rem;
-                    font-weight: 400;
-                    font-style: normal;
-                    letter-spacing: normal;
                     line-height: 1.5rem;
                     text-align: center;
-                    font-style: normal;
                     letter-spacing: normal;
                     line-height: normal;        }
             }
@@ -642,5 +644,88 @@
                     letter-spacing: normal;
                     line-height: normal;   
                 } 
+            }
+            img.video{
+                height: 30%;
+                width: 35%;
+            }
+
+
+            .steps{
+                
+               
+                &-header{
+                    @include h2;
+
+                    margin-bottom: 2rem;
+                    margin-top: 3rem;
+                }
+                &-something{
+                    margin-bottom: 7rem;
+                }
+                &-block{
+                
+                    height: auto;
+                    z-index: 2;
+        
+                    &__item:last-child{
+                        margin-right: 0px;
+                    }
+                    &__item{
+                        width: 15rem;
+                        height: auto;
+                     
+                        margin-right: 2rem;
+                    
+                        &-number{
+                            margin-top: 1rem;
+                            margin-bottom: 0.5rem;
+                          
+                            font-size: 2rem;
+                           
+                        }
+                        &-header{
+                            margin-bottom: 1rem;
+                            font-size: 2rem;
+
+                        }
+                        
+                        &-text{
+                            font-size: 1.6rem;
+
+                        }
+        
+                    }
+                }
+                .images{
+                   
+                        .image__1{
+                            height: 60%;
+                        }
+                        .image__2{
+                            height: 40%;
+                        }
+                    }
+             
+            }
+            .features{
+                height: 100vh;
+                &-header{
+                    margin-bottom: 2rem;
+                    margin-top: 5rem;
+                }
+                &-something{
+                    margin-bottom: 7rem;
+                }
+                &-block{
+                    &__item:last-child{
+                        margin-right: 0rem;
+        
+                    }
+                    &__item{
+                        width: 15rem;
+                        height: auto;  
+                    }
+                }
             }
     }
